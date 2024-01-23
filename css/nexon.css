@@ -800,8 +800,8 @@ section .title p::before {
 	line-height: 3.375em;
 }
 #section04 .content ul li a {
+	display: inline-block;
 	padding: 0 20px;
-	word-break: break-all;
 	text-wrap: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
