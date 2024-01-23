@@ -800,6 +800,7 @@ section .title p::before {
 	line-height: 3.375em;
 }
 #section04 .content ul li a {
+	width: 100%;
 	padding: 0 20px;
 	white-space: nowrap;
 	overflow: hidden;
