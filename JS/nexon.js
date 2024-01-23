@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", function(){
     let video=document.getElementById("main_video");
-    main_video.muted=true;// 비디오는 음소거가 원칙
     video.addEventListener("loadeddata", function(){
         main_video.play();
         //console.log("loaded");   
