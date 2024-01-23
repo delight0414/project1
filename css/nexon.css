@@ -800,11 +800,8 @@ section .title p::before {
 	line-height: 3.375em;
 }
 #section04 .content ul li a {
-	display: '-webkit-box';
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
 	padding: 0 20px;
-	text-wrap: nowrap;
+	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
