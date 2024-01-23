@@ -829,6 +829,12 @@ section .title p::before {
 	#section04 .content ul li a span {
 		display: none;
 	}
+	#section04 .content ul li a {
+		padding: 0 20px;
+		text-wrap: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 @media only screen and (max-width:720px) {
 	#section04 .news_wrap {
@@ -836,6 +842,20 @@ section .title p::before {
 	}
 	#section04 a.more {
 		width: 100%;
+	}
+	#section04 .content ul li a {
+		padding: 0 20px;
+		text-wrap: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+@media only screen and (max-width:520px) {
+	#section04 .content ul li a {
+		padding: 0 20px;
+		text-wrap: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 /*footer*/
@@ -884,7 +904,7 @@ section .title p::before {
 		gap: 5px;
 	}
 }
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:520px) {
 	#footer .company ul li p {
 		display: none;
 	}
