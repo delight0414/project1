@@ -26,7 +26,6 @@ const swiper = new Swiper("#section03 .sec03_swiper", {
     breakpoints: {
         450: { // 990 미만 450 이상 
             slidesPerView: 1.5,
-            centeredSlides: true
         },
         991: { // 991 이상
             slidesPerView: 3

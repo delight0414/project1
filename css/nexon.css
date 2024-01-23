@@ -24,24 +24,6 @@ body {
 body.fixed {
 	overflow-y: hidden;
 }
-/* #load {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: none;
-    opacity: 0.8;
-    background: white;
-    z-index: 99;
-    text-align: center;
-}
-#load > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-} */
 /*main*/
 #main {
 	height: 100vh;
@@ -734,6 +716,10 @@ section .title p::before {
 	#section03 .sec03_swiper {
 		width: 100%;
 	}
+	#section03 a.prev,
+	#section03 a.next {
+		display: none;
+	}
 }
 
 
@@ -796,7 +782,6 @@ section .title p::before {
 	transform: translateY(-50%);
 	right: 2%;
 }
-
 #section04 .content ul li,
 #section04 .content ul li a,
 #section04 .content ul li a span {
@@ -808,13 +793,11 @@ section .title p::before {
 #section04 .content ul li:hover a span {
 	color: #00365C;
 }
-
 #section04 .content ul li {
 	display: flex;
 	padding: 0 20px;
 	align-items: center;
 	line-height: 3.375em;
-
 }
 #section04 .content ul li a {
 	padding: 0 20px;
@@ -826,7 +809,6 @@ section .title p::before {
 	padding-right: 30px;
 	position: relative;
 }
-
 #section04 .content ul li a span::after {
 	position: absolute;
 	content: "";
