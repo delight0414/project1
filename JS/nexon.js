@@ -1,45 +1,51 @@
 window.addEventListener("DOMContentLoaded", function(){
+
     let video=document.getElementById("main_video");
+    let prevBtn=document.querySelector("a.prev");
+    let nextBtn=document.querySelector("a.next");
+
+    // let content=document.querySelector(".container");
+    // let contentLi=content.children;
+
+
     video.addEventListener("loadeddata", function(){
-        main_video.play();
-        //console.log("loaded");   
+        main_video.play();  
     });
     video.addEventListener("ended", function(){
-        main_video.play(); 
-        //console.log("ended");   
+        main_video.play();    
+    });
+    const swiper = new Swiper("#section03 .sec03_swiper", {
+        loop:true,
+        autoplay: 
+            {delay: 3000},
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+        },
+        breakpoints: {
+            450: {
+                slidesPerView: 1.5,
+            },
+            991: {
+                slidesPerView: 3
+            }
+        }
+    });
+    prevBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        swiper.slidePrev();
+    });
+    nextBtn.addEventListener("click", function(e){
+        e.preventDefault();
+        swiper.slideNext();
     });
 });
 
 $(function(){
-const swiper = new Swiper("#section03 .sec03_swiper", {
-    loop:true,
-    autoplay: 
-        {delay: 3000},
-    slidesPerView: 1.5, // 450 미만
-    spaceBetween: 20,
-    centeredSlides: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-    },
-    breakpoints: {
-        450: { // 990 미만 450 이상 
-            slidesPerView: 1.5,
-        },
-        991: { // 991 이상
-            slidesPerView: 3
-        }
-    }
-});
-$("a.prev").click(function(e){
-    e.preventDefault();
-    swiper.slidePrev();
-});
-$("a.next").click(function(e){
-    e.preventDefault();
-    swiper.slideNext();
-});
-let=wint=0;
+let wint=0;
     $(window).scroll(function(){
         wint=$(window).scrollTop();
         if(wint > 50){
@@ -105,7 +111,7 @@ let headerFlag=false;
         $(this).removeAttr("class");
         $(this).addClass("open");   
     }
-        //console.log(headerFlag);
+
     });
     $("#mobile > ul > li").click(function(e){
         e.preventDefault();
@@ -133,4 +139,13 @@ let headerFlag=false;
 			}
 		}
 	});
+    setInterval(function() {
+        let boxIn = $('.boxIn ul');
+        let boxRow = $('.boxIn ul li:first'); 
+        let ARea = function(){ 
+            boxRow.appendTo(boxIn).show();
+        };
+        $(boxRow).hide(100, ARea);    
+    },4000);
+
 });
