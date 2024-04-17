@@ -1,12 +1,11 @@
 window.addEventListener("DOMContentLoaded", function(){
+    AOS.init({
+		once: true
+	});
 
     let video=document.getElementById("main_video");
     let prevBtn=document.querySelector("a.prev");
     let nextBtn=document.querySelector("a.next");
-
-    // let content=document.querySelector(".container");
-    // let contentLi=content.children;
-
 
     video.addEventListener("loadeddata", function(){
         main_video.play();  
