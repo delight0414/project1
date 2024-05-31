@@ -3,16 +3,20 @@ window.addEventListener("DOMContentLoaded", function(){
 		once: true
 	});
 
-    let video=document.getElementById("main_video");
+    // let video=document.getElementById("main_video");
     let prevBtn=document.querySelector("a.prev");
     let nextBtn=document.querySelector("a.next");
 
-    video.addEventListener("loadeddata", function(){
-        main_video.play();  
+    let $video = $('#main_video');
+
+    $video.on('loadeddata', function() {
+        $video.get(0).play();
     });
-    video.addEventListener("ended", function(){
-        main_video.play();    
+
+    $video.on('ended', function() {
+        $video.get(0).play();
     });
+    
     const swiper = new Swiper("#section03 .sec03_swiper", {
         loop:true,
         autoplay: 
@@ -141,10 +145,10 @@ let headerFlag=false;
     setInterval(function() {
         let boxIn = $('.boxIn ul');
         let boxRow = $('.boxIn ul li:first'); 
-        let ARea = function(){ 
+        let Area = function(){ 
             boxRow.appendTo(boxIn).show();
         };
-        $(boxRow).hide(100, ARea);    
+        $(boxRow).hide(100, Area);    
     },4000);
 
 });

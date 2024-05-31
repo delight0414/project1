@@ -1,362 +1,394 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXON</title>
-<link rel="shortcut icon" href="images/img/favicon_logo.ico">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
-<link rel="stylesheet" href="css/nexon.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@terwanerik/scrolltrigger@1.0.5/dist/ScrollTrigger.min.js"></script>
-<script src="JS/nexon.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NEXON</title>
+	<link rel="shortcut icon" href="images/img/favicon_logo.ico">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="css/nexon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@terwanerik/scrolltrigger@1.0.5/dist/ScrollTrigger.min.js"></script>
+	<script src="JS/nexon.js"></script>
 </head>
 
 <body>
-<div class="container">
-	<div id="main">
+	<div class="container">
+		<div id="main">
 			<header>
-					<div class="header_inner">
-							<div class="logo"><h1><a href="">logo</a></h1></div>
-							<nav id="gnb">
-									<ul>
-											<li>
-													<a href="">넥슨게임즈</a>
-													<ul>
-															<li><a href="">넥슨게임즈</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">게임</a>
-													<ul>
-															<li><a href="">V4</a></li>
-															<li><a href="">서든어택</a></li>
-															<li><a href="">블루 아카이브</a></li>
-															<li><a href="">히트2</a></li>
-															<li><a href="">퍼스트 디센던트</a></li>
-															<li><a href="">갓썸</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">인재채용</a>
-													<ul>
-															<li><a href="">기업문화</a></li>
-															<li><a href="">피플&컬쳐</a></li>
-															<li><a href="">복지</a></li>
-															<li><a href="">채용</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">투자정보</a>
-													<ul>
-															<li><a href="">기업지배구조</a></li>
-															<li><a href="">주가정보</a></li>
-															<li><a href="">재무정보</a></li>
-															<li><a href="">공시/실적</a></li>
-															<li><a href="">공고</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">미디어</a>
-													<ul>
-															<li><a href="">뉴스</a></li>
-															<li><a href="">보도자료</a></li>
-															<li><a href="">멀티미디어</a></li>
-													</ul>
-											</li>
-									</ul>
-							</nav>
-							<nav id="mobile">
-									<ul>
-											<li>
-													<a href="">넥슨게임즈</a>
-													<ul>
-															<li><a href="">넥슨게임즈</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">게임</a>
-													<ul>
-															<li><a href="">V4</a></li>
-															<li><a href="">서든어택</a></li>
-															<li><a href="">블루 아카이브</a></li>
-															<li><a href="">히트2</a></li>
-															<li><a href="">퍼스트 디센던트</a></li>
-															<li><a href="">갓썸</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">인재채용</a>
-													<ul>
-															<li><a href="">기업문화</a></li>
-															<li><a href="">피플&컬쳐</a></li>
-															<li><a href="">복지</a></li>
-															<li><a href="">채용</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">투자정보</a>
-													<ul>
-															<li><a href="">기업지배구조</a></li>
-															<li><a href="">주가정보</a></li>
-															<li><a href="">재무정보</a></li>
-															<li><a href="">공시/실적</a></li>
-															<li><a href="">공고</a></li>
-													</ul>
-											</li>
-											<li>
-													<a href="">미디어</a>
-													<ul>
-															<li><a href="">뉴스</a></li>
-															<li><a href="">보도자료</a></li>
-															<li><a href="">멀티미디어</a></li>
-													</ul>
-											</li>
-											<li class="contact">
-													<a href="">CONTACT US</a>
-											</li>
-									</ul>
-							</nav>
-							<div class="btn_right">
-									<a href="" class="contact">CONTACT US</a>
-									<a href="" id="tab" class="open">tab</a>
-							</div>
+				<div class="header_inner">
+					<div class="logo">
+						<h1><a href="">logo</a></h1>
 					</div>
+					<nav id="gnb">
+						<ul>
+							<li>
+								<a href="">넥슨게임즈</a>
+								<ul>
+									<li><a href="">넥슨게임즈</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">게임</a>
+								<ul>
+									<li><a href="">V4</a></li>
+									<li><a href="">서든어택</a></li>
+									<li><a href="">블루 아카이브</a></li>
+									<li><a href="">히트2</a></li>
+									<li><a href="">퍼스트 디센던트</a></li>
+									<li><a href="">갓썸</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">인재채용</a>
+								<ul>
+									<li><a href="">기업문화</a></li>
+									<li><a href="">피플&컬쳐</a></li>
+									<li><a href="">복지</a></li>
+									<li><a href="">채용</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">투자정보</a>
+								<ul>
+									<li><a href="">기업지배구조</a></li>
+									<li><a href="">주가정보</a></li>
+									<li><a href="">재무정보</a></li>
+									<li><a href="">공시/실적</a></li>
+									<li><a href="">공고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">미디어</a>
+								<ul>
+									<li><a href="">뉴스</a></li>
+									<li><a href="">보도자료</a></li>
+									<li><a href="">멀티미디어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<nav id="mobile">
+						<ul>
+							<li>
+								<a href="">넥슨게임즈</a>
+								<ul>
+									<li><a href="">넥슨게임즈</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">게임</a>
+								<ul>
+									<li><a href="">V4</a></li>
+									<li><a href="">서든어택</a></li>
+									<li><a href="">블루 아카이브</a></li>
+									<li><a href="">히트2</a></li>
+									<li><a href="">퍼스트 디센던트</a></li>
+									<li><a href="">갓썸</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">인재채용</a>
+								<ul>
+									<li><a href="">기업문화</a></li>
+									<li><a href="">피플&컬쳐</a></li>
+									<li><a href="">복지</a></li>
+									<li><a href="">채용</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">투자정보</a>
+								<ul>
+									<li><a href="">기업지배구조</a></li>
+									<li><a href="">주가정보</a></li>
+									<li><a href="">재무정보</a></li>
+									<li><a href="">공시/실적</a></li>
+									<li><a href="">공고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">미디어</a>
+								<ul>
+									<li><a href="">뉴스</a></li>
+									<li><a href="">보도자료</a></li>
+									<li><a href="">멀티미디어</a></li>
+								</ul>
+							</li>
+							<li class="contact">
+								<a href="">CONTACT US</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="btn_right">
+						<a href="" class="contact">CONTACT US</a>
+						<a href="" id="tab" class="open">tab</a>
+					</div>
+				</div>
 			</header>
 			<div class="slider">
-					<video src="images/video/main_video.mp4" id="main_video" muted autoplay playsinline poster=""></video>
-					<div class="main_text" >
-							<p data-aos="fade-up" data-aos-duration="700" class="subtitle">We Make Games Better</p>
-							<h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">NEXON GAMES</h3>
+				<video src="images/video/main_video.mp4" id="main_video" muted autoplay playsinline poster=""></video>
+				<div class="main_text">
+					<p data-aos="fade-up" data-aos-duration="700" class="subtitle">We Make Games Better</p>
+					<h3 data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">NEXON GAMES</h3>
+				</div>
+				<div class="scroll">
+					<div class="mousey">
+						<div class="scroller"></div>
 					</div>
-					<div class="scroll">
-							<div class="mousey">
-							<div class="scroller"></div>
-							</div>
-							<p>Scroll</p>
-					</div>
+					<p>Scroll</p>
+				</div>
 			</div>
-	</div>
-	<section id="section01">
+		</div>
+		<section id="section01">
 			<div class="title" data-aos="fade-up" data-aos-duration="700">
-					<h3>WHO WE ARE</h3>
-					<p>넥슨게임즈는 넥슨 컴퍼니의 게임 개발사로, PC, 모바일, 콘솔 플랫폼을 아우르는 다양한 장르의 게임을 개발하여 전세계 각국에 선보이고 있습니다.</p>
+				<h3>WHO WE ARE</h3>
+				<p>넥슨게임즈는 넥슨 컴퍼니의 게임 개발사로, PC, 모바일, 콘솔 플랫폼을 아우르는 다양한 장르의 게임을 개발하여 전세계 각국에 선보이고 있습니다.</p>
 			</div>
 			<div class="content">
-					<ul>
-					<li class="left" data-aos="fade-up" data-aos-duration="700" >
-					<div class="visual" >
-							<img class="desktop" src="images/img/banner1.png" alt="">
-							<img class="mobile" src="images/img/banner1_m.png" alt="">
+				<ul>
+					<li class="left" data-aos="fade-up" data-aos-duration="700">
+						<div class="visual">
+							<img class="desktop" src="images/img/banner1.png" alt="유저중심">
+							<img class="mobile" src="images/img/banner1_m.png" alt="유저중심">
 							<div class="hatch"></div>
-					</div>
-							<div class="text" data-aos="fade-up" data-aos-duration="700" >
-									<div class="heading">
-											<strong>USER-FIRST</strong><p>유저중심</p>    
-									</div>
-									<span>가장 먼저 유저 입장에서 생각하며
-									유저가 재미를 온전히 느낄 수 있는 게임을 만듭니다.</span>
+						</div>
+						<div class="text" data-aos="fade-up" data-aos-duration="700">
+							<div class="heading">
+								<strong>USER-FIRST</strong>
+								<p>유저중심</p>
 							</div>
+							<span>가장 먼저 유저 입장에서 생각하며
+								유저가 재미를 온전히 느낄 수 있는 게임을 만듭니다.</span>
+						</div>
 					</li>
-					<li class="right" data-aos="fade-up" data-aos-duration="700" >
-							<img class="desktop" src="images/img/banner2.png" alt="">
-							<img class="mobile" src="images/img/banner2_m.png" alt="">
-							<div class="text" data-aos="fade-up" data-aos-duration="700" >
-									<div class="heading">
-											<strong>COURAGE</strong><p>용기</p>                        
-									</div>
-									<span>개척자에게 돌아오는 보상은 한발 앞 서 나아간 용기에 대한 대가입니다.</span>
+					<li class="right" data-aos="fade-up" data-aos-duration="700">
+						<img class="desktop" src="images/img/banner2.png" alt="COURAGE">
+						<img class="mobile" src="images/img/banner2_m.png" alt="COURAGE">
+						<div class="text" data-aos="fade-up" data-aos-duration="700">
+							<div class="heading">
+								<strong>COURAGE</strong>
+								<p>용기</p>
 							</div>
+							<span>개척자에게 돌아오는 보상은 한발 앞 서 나아간 용기에 대한 대가입니다.</span>
+						</div>
 					</li>
-					<li class="left" data-aos="fade-up" data-aos-duration="700" >
-							<img class="desktop" src="images/img/banner3.png" alt="">
-							<img class="mobile" src="images/img/banner3_m.png" alt="">
-							<div class="text" data-aos="fade-up" data-aos-duration="700" >
-									<div class="heading">
-											<strong>A SENSE OF OWNERSHIP</strong><p>주인의식/오너십</p>
-									</div>
-									<span>누구나 할 수 있는 보통의 수준에 타협하지 않고 한 발자국 더 나아갑니다.</span>
+					<li class="left" data-aos="fade-up" data-aos-duration="700">
+						<img class="desktop" src="images/img/banner3.png" alt="주인의식/오너십">
+						<img class="mobile" src="images/img/banner3_m.png" alt="주인의식/오너십">
+						<div class="text" data-aos="fade-up" data-aos-duration="700">
+							<div class="heading">
+								<strong>A SENSE OF OWNERSHIP</strong>
+								<p>주인의식/오너십</p>
 							</div>
+							<span>누구나 할 수 있는 보통의 수준에 타협하지 않고 한 발자국 더 나아갑니다.</span>
+						</div>
 					</li>
-					<li class="right" data-aos="fade-up" data-aos-duration="700" >
-							<div class="visual">                
-									<div class="hatch"></div>
-									<img class="desktop" src="images/img/banner4.png" alt="">
-									<img class="mobile" src="images/img/banner4_m.png" alt="">
+					<li class="right" data-aos="fade-up" data-aos-duration="700">
+						<div class="visual">
+							<div class="hatch"></div>
+							<img class="desktop" src="images/img/banner4.png" alt="커뮤니케이션/명확성">
+							<img class="mobile" src="images/img/banner4_m.png" alt="커뮤니케이션/명확성">
+						</div>
+						<div class="text" data-aos="fade-up" data-aos-duration="700">
+							<div class="heading">
+								<strong>CLEAR COMMUNICATION</strong>
+								<p>커뮤니케이션/명확성</p>
 							</div>
-							<div class="text" data-aos="fade-up" data-aos-duration="700" >
-									<div class="heading">
-											<strong>CLEAR COMMUNICATION</strong><p>커뮤니케이션/명확성</p>                    
-									</div>
-									<span>누구나 이해하기 쉽도록 간결하고 명확하게 전달하여 상대가 엉뚱한 방향으로 가지 않도록 합니다.</span>
-							</div>
+							<span>누구나 이해하기 쉽도록 간결하고 명확하게 전달하여 상대가 엉뚱한 방향으로 가지 않도록 합니다.</span>
+						</div>
 					</li>
-					</ul>
+				</ul>
 			</div>
-	</section>
-	<section id="section02">
-			<div class="sec02_inner" data-aos="fade-up" data-aos-duration="700" >
-					<div class="title" >
-							<h3>NEXON GAMES</h3>
-							<div class="subtitle">
-									<span>일상을 뛰어넘는 참신한 재미를 만듭니다.</span>
-									<span>놀라운 경험을 선사하는 새로운 세계를 창조합니다.</span>
-							</div>
+		</section>
+		<section id="section02">
+			<div class="sec02_inner" data-aos="fade-up" data-aos-duration="700">
+				<div class="title">
+					<h3>NEXON GAMES</h3>
+					<div class="subtitle">
+						<span>일상을 뛰어넘는 참신한 재미를 만듭니다.</span>
+						<span>놀라운 경험을 선사하는 새로운 세계를 창조합니다.</span>
 					</div>
-					<img class="desktop" src="images/img/desktop.png" alt="">
-					<img class="mobile" src="images/img/mobile.png" alt="">
-					<div class="btn_more"><a href="">NEXON GAME 자세히보기</a></div>
+				</div>
+				<img class="desktop" src="images/img/desktop.png" alt="NEXON GAME 자세히보기">
+				<img class="mobile" src="images/img/mobile.png" alt="NEXON GAME 자세히보기">
+				<div class="btn_more"><a href="">NEXON GAME 자세히보기</a></div>
 			</div>
-	</section>
-	<section id="section03">
+		</section>
+		<section id="section03">
 			<div class="cont-wrap">
-							<div class="title" data-aos="fade-up" data-aos-duration="700" >
+				<div class="title" data-aos="fade-up" data-aos-duration="700">
 					<h3>GAMES</h3>
 					<p>넥슨게임즈는 기존의 게임보다 한층 돋보이는 재미를 담은 아우르는 다양한 장르의 게임을 개발하여 전세계 각국에 선보이고 있습니다.</p>
-			</div>
+				</div>
 			</div>
 			<div class="sec03_container">
-					<div class="sec03_swiper sec03Swiper">
-							<div class="swiper-wrapper">
-									<div class="swiper-slide"><img src="images/img/v4.png" alt="">
-											<div class="desc">
-													<p class="name">V4</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/veiled_experts.png" alt="">
-											<div class="desc">
-													<p class="name">베일드 엑스퍼트</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/first_descendant.png" alt="">
-											<div class="desc">
-													<p class="name">퍼스트 디센던트</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/warhaven.png" alt="">
-											<div class="desc">
-													<p class="name">워헤이븐</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/fc_online.png" alt="">
-											<div class="desc">
-													<p class="name">FC 온라인</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/bnf.png" alt="">
-											<div class="desc">
-													<p class="name">빌딩 앤 파이터</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/blue_archive.png" alt="">
-											<div class="desc">
-													<p class="name">블루아카이브</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/maplestory.png" alt="">
-											<div class="desc">
-													<p class="name">메이플스토리</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
-									<div class="swiper-slide"><img src="images/img/dave_the_dive.png" alt="">
-											<div class="desc">
-													<p class="name">데이브 더 다이브</p>
-													<a class="btn_view" href="">+VIEW</a>
-											</div>
-									</div>
+				<div class="sec03_swiper sec03Swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/img/v4.png" alt="V4">
+							<div class="desc">
+								<p class="name">V4</p>
+								<a class="btn_view" href="">+VIEW</a>
 							</div>
-					<div class="swiper-pagination"></div>
-							<a href="" class="next">next</a>
-							<a href="" class="prev">prev</a>
+						</div>
+						<div class="swiper-slide"><img src="images/img/veiled_experts.png" alt="베일드 엑스퍼트">
+							<div class="desc">
+								<p class="name">베일드 엑스퍼트</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/first_descendant.png" alt="퍼스트 디센던트">
+							<div class="desc">
+								<p class="name">퍼스트 디센던트</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/warhaven.png" alt="워헤이븐">
+							<div class="desc">
+								<p class="name">워헤이븐</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/fc_online.png" alt="FC 온라인">
+							<div class="desc">
+								<p class="name">FC 온라인</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/bnf.png" alt="빌딩 앤 파이터">
+							<div class="desc">
+								<p class="name">빌딩 앤 파이터</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/blue_archive.png" alt="블루아카이브">
+							<div class="desc">
+								<p class="name">블루아카이브</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/maplestory.png" alt="메이플스토리">
+							<div class="desc">
+								<p class="name">메이플스토리</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
+						<div class="swiper-slide"><img src="images/img/dave_the_dive.png" alt="데이브 더 다이브">
+							<div class="desc">
+								<p class="name">데이브 더 다이브</p>
+								<a class="btn_view" href="">+VIEW</a>
+							</div>
+						</div>
 					</div>
+					<div class="swiper-pagination"></div>
+					<a href="" class="next">next</a>
+					<a href="" class="prev">prev</a>
+				</div>
 			</div>
-	</section>
-	<section id="section04">
-			<div class="title" data-aos="fade-up" data-aos-duration="700" ><h3>NEXON'S NEWS</h3></div>
-			<a href="" class="more" data-aos="fade-up" data-aos-duration="700" ><p>전체보기 +</p></a>
-			<div class="news-list_wrap" data-aos="fade-up" data-aos-duration="700" >
-			<div class="list-active"></div>
-			<div class="news-list">
-			<div class="boxIn">
-					<ul>
-							<li>
-									<a href="">
-											<span><p class="date">2023.12.15</p>
-													<strong>블루 아카이브</strong><p class="headline">블루 아카이브, 2023 日 유행어 톱10 올라…외산 IP 중 최고</p>
-											</span>
-									</a>
-							</li>
-							<li>
-									<a href="">
-											<span><p class="date">2023.12.16</p>
-													<strong>서든어택</strong><p class="headline">[종합] 1년 마무리 한 '2023 서든어택 슈퍼 페스티벌'</p>
-											</span>
-									</a>
-							</li>
-							<li>
-									<a href="">
-											<span><p class="date">2023.12.20</p>
-													<strong>블루 아카이브</strong><p class="headline">'블루 아카이브', 서브컬처 팬덤의 제왕이 되다</p>
-											</span>
-									</a>
-							</li>
-							<li>
-									<a href="">
-											<span><p class="date">2023.12.28</p>
-													<strong>블루 아카이브</strong><p class="headline">넥슨게임즈, 'V4'·'블루아카이브' 등 기존작 흥행 이은 신작 성공도 기대</p>
-											</span>
-									</a>
-							</li>
-							<li>
-									<a href="">
-											<span><p class="date">2024.01.09</p>
-													<strong>퍼스트 디센던트</strong><p class="headline">200만 즐긴 넥슨 '퍼스트 디센던트', K-루트 슈터 정립하나</p>
-											</span>
-									</a>
-							</li>
-							<li>
-									<a href="">
-											<span><p class="date">2024.01.18</p>
-													<strong>히트2</strong><p class="headline">넥슨 '히트2', 하드코어 서버로 모바일 MMO 새 지평 열까</p>
-											</span>
-									</a>
-							</li>
-					</ul>
+		</section>
+		<section id="section04">
+			<div class="title" data-aos="fade-up" data-aos-duration="700">
+				<h3>NEXON'S NEWS</h3>
 			</div>
-	</div>
-	</div>
-	</section>
-	<footer id="footer">
+			<a href="" class="more" data-aos="fade-up" data-aos-duration="700">
+				<p>전체보기 +</p>
+			</a>
+			<div class="news-list_wrap" data-aos="fade-up" data-aos-duration="700">
+				<div class="list-active"></div>
+				<div class="news-list">
+					<div class="boxIn">
+						<ul>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2023.12.15</p>
+										<strong>블루 아카이브</strong>
+										<p class="headline">블루 아카이브, 2023 日 유행어 톱10 올라…외산 IP 중 최고</p>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2023.12.16</p>
+										<strong>서든어택</strong>
+										<p class="headline">[종합] 1년 마무리 한 '2023 서든어택 슈퍼 페스티벌'</p>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2023.12.20</p>
+										<strong>블루 아카이브</strong>
+										<p class="headline">'블루 아카이브', 서브컬처 팬덤의 제왕이 되다</p>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2023.12.28</p>
+										<strong>블루 아카이브</strong>
+										<p class="headline">넥슨게임즈, 'V4'·'블루아카이브' 등 기존작 흥행 이은 신작 성공도 기대</p>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2024.01.09</p>
+										<strong>퍼스트 디센던트</strong>
+										<p class="headline">200만 즐긴 넥슨 '퍼스트 디센던트', K-루트 슈터 정립하나</p>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>
+										<p class="date">2024.01.18</p>
+										<strong>히트2</strong>
+										<p class="headline">넥슨 '히트2', 하드코어 서버로 모바일 MMO 새 지평 열까</p>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
 			<div class="ft_top">
-					<div class="ft_inner">
-					<div class="ft_logo"><img src="images/img/logo.png" alt=""></div>
+				<div class="ft_inner">
+					<div class="ft_logo"><img src="images/img/logo.png" alt="Nexon Games"></div>
 					<p class="copyright">©NEXON Games All Rights Reserved.</p>
-			</div></div>
-			<div class="ft_bottom">
-					<div class="ft_inner">
-			<div class="company">
-					<ul>
-							<li><span>넥슨게임즈 SEOUL</span> <p>서울특별시 강남구 남부순환로 2621 디앤오 강남빌딩 5층</p></li>
-							<li><span>넥슨게임즈 PANGYO</span><p>경기 성남시 분당구 판교로 256번길 25 판교 테크노벨리</p></li>
-					</ul>
+				</div>
 			</div>
-	</div></div>
-	</footer>
-</div>
+			<div class="ft_bottom">
+				<div class="ft_inner">
+					<div class="company">
+						<ul>
+							<li><span>넥슨게임즈 SEOUL</span>
+								<p>서울특별시 강남구 남부순환로 2621 디앤오 강남빌딩 5층</p>
+							</li>
+							<li><span>넥슨게임즈 PANGYO</span>
+								<p>경기 성남시 분당구 판교로 256번길 25 판교 테크노벨리</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
+
 </html>
